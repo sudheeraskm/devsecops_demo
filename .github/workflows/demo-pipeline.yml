@@ -90,6 +90,9 @@ jobs:
                 username: ${{ github.actor }}
                 password: ${{ secrets.TOKEN }}
             
+            - name: actor
+              run: echo "Actor: ${{ github.actor }}"
+
             - name: Extract metadata for Docker
               id: meta
               uses: docker/metadata-action@v4
